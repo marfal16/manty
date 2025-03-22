@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mondo delle Candele</title>
+    <style>
+        /* Reset di base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo della pagina */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Intestazione */
+        header {
+            background-color: #5e3e5e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        /* Navigazione */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Sezione Chi Siamo */
+        #about {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Sezione Prodotti */
+        #products {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+        }
+
+        #products h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            width: 250px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-item h3 {
+            font-size: 1.5rem;
+            padding: 10px;
+            background-color: #5e3e5e;
+            color: white;
+        }
+
+        .product-item p {
+            padding: 10px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        /* Galleria Immagini */
+        #gallery {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #gallery h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Sezione Contatti */
+        #contact {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        #contact input[type="submit"] {
+            background-color: #5e3e5e;
+            color: white;
+            cursor: pointer;
+        }
+
+        #contact input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #5e3e5e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Il Mondo delle Candele</h1>
+    <p>Le candele più profumate per ogni occasione</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Chi Siamo</a></li>
+        <li><a href="#products">Prodotti</a></li>
+        <li><a href="#gallery">Galleria</a></li>
+        <li><a href="#contact">Contatti</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>Chi Siamo</h2>
+    <p>Benvenuti nel nostro mondo di candele artigianali. Ogni candela è realizzata con passione e materiali naturali per regalarti un'esperienza unica. Siamo una piccola azienda a conduzione familiare, e la nostra missione è quella di portare nella tua casa la luce e il profumo che meriti.</p>
+</section>
+
+<section id="products">
+    <h2>I Nostri Prodotti</h2>
+    <div class="product">
+        <div class="product-item">
+            <img src="https://via.placeholder.com/250" alt="Candela 1">
+            <h3>Candela Vaniglia</h3>
+            <p>Un profumo dolce e avvolgente per creare l'atmosfera perfetta.</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/250" alt="Candela 2">
+            <h3>Candela Lavanda</h3>
+            <p>Calma e rilassa la mente con la fragranza di lavanda fresca.</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/250" alt="Candela 3">
+            <h3>Candela Agrumi</h3>
+            <p>Rinfrescante e energizzante, perfetta per ogni momento della giornata.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Galleria</h2>
+    <div>
+        <img src="https://via.placeholder.com/300" class="gallery-img" alt="Candela 1">
+        <img src="https://via.placeholder.com/300" class="gallery-img" alt="Candela 2">
+        <img src="https://via.placeholder.com/300" class="gallery-img" alt="Candela 3">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contattaci</h2>
+    <form action="mailto:info@candlemondo.com" method="post" enctype="text/plain">
+        <input type="text" id="nome" name="nome" placeholder="Nome" required><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br>
+        <textarea id="messaggio" name="messaggio" placeholder="Scrivi il tuo messaggio" required></textarea><br><br>
+        <input type="submit" value="Invia">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Il Mondo delle Candele. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
